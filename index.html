@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEADLINE FESTIVAL // SIGNAL_001</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="festival-entrance">
+  <main class="entrance" id="entranceScreen">
+
+    <section class="intro-video-wrap" aria-label="Abertura visual do festival">
+      <video
+        id="introVideo"
+        class="intro-video"
+        src="video/deadline-intro.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto">
+      </video>
+    </section>
+
+    <section class="right-column" aria-label="Informações do festival">
+      <div class="festival-info">
+        <h1>DEADLINE FESTIVAL</h1>
+
+        <div class="info-block">
+          <p>SIGNAL_001</p>
+          <p>MORUMBIS // SÃO PAULO</p>
+          <p>17—19 OCT</p>
+        </div>
+      </div>
+
+      <button class="enter-cta" id="enterButton" type="button">
+        [ CLICK ANYWHERE TO <span class="blood">CROSS THE DEADLINE</span> ]
+      </button>
+    </section>
+  </main>
+
+  <!-- A futura homepage será colocada aqui, depois da tela de entrada. -->
+  <section class="site-placeholder" id="sitePlaceholder" aria-hidden="true">
+    <p>DEADLINE FESTIVAL</p>
+  </section>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+  <div class="flash" aria-hidden="true"></div>
+
+  <!-- Coloque o beat de vocês em audio/deadline-beat.mp3 quando chegarmos à etapa do áudio. -->
+  <audio id="festivalAudio" preload="auto">
+    <source src="audio/deadline-beat.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
