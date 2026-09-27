@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEADLINE FESTIVAL // MATUÊ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="artist.css">
+</head>
+<body class="artist-page">
+  <div class="home-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="home.html" aria-label="DEADMARK">
+      <img src="img/deadmark-test.png" alt="DEADMARK">
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="home.html">HOME</a>
+      <a class="active" href="lineup.html">LINEUP</a>
+      <a href="home.html#faq">FAQ</a>
+      <a href="home.html#ingressos">INGRESSOS</a>
+    </nav>
+    <div class="header-code">SIGNAL_01</div>
+  </header>
+
+  <main class="artist-main">
+    <a class="back-link" href="lineup.html">← VOLTAR PRA LINEUP</a>
+
+    <section class="artist-hero">
+      <div class="artist-photo-wrap">
+        <img src="https://www.eventworld.co/blob/images/pg/matue_309b0_1000.jpg" alt="Matuê em retrato preto e branco">
+        <div class="photo-stamp">DEADLINE // SIGNAL_01</div>
+      </div>
+
+      <div class="artist-info">
+        <p class="artist-code">ARTIST_001 // TRAP</p>
+        <h1>MATUÊ</h1>
+        <p class="artist-manifesto">UM DOS SINAIS MAIS PESADOS DO TRAP NO PALCO. NO DEADLINE, O RUÍDO NÃO PARA QUANDO A BATIDA TERMINA.</p>
+
+        <div class="artist-data">
+          <span>STYLE</span><strong>TRAP / RAGE</strong>
+          <span>STAGE</span><strong>DEAD STAGE</strong>
+          <span>STATUS</span><strong>CONFIRMED</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="artist-bottom">
+      <span>TOO LOUD TO SURVIVE.</span>
+      <span>DEADLINE // MORUMBIS // SP</span>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.lineup-page{background:#000;color:#f1f1ef;min-height:100vh}
+.lineup-main{padding:150px 7vw 90px}
+.lineup-intro{max-width:1150px;margin:0 auto 110px;text-align:center}
+.lineup-intro .lineup-kicker{margin:0 0 34px;color:#666;font-size:10px;letter-spacing:.24em}
+.lineup-intro h1{margin:0;font-size:clamp(70px,11vw,170px);line-height:.8;letter-spacing:-.065em;font-weight:700}
+.lineup-intro h1 span{color:#777}
+.lineup-lead{max-width:620px;margin:46px auto 0;font-size:clamp(14px,1.5vw,20px);line-height:1.18;letter-spacing:.04em;text-transform:uppercase;color:#bcbcbc}
+.artist-grid{display:grid;grid-template-columns:minmax(280px,420px);justify-content:center}
+.artist-card{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:#0b0b0b;border:1px solid rgba(241,241,239,.16)}
+.artist-card img{width:100%;height:100%;display:block;object-fit:cover;filter:grayscale(1) contrast(1.08);transform:scale(1.001);transition:transform .55s cubic-bezier(.2,.7,0,1),filter .35s ease}
+.artist-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.36) 28%,transparent 62%);pointer-events:none}
+.artist-card-meta{position:absolute;left:24px;bottom:24px;z-index:2}
+.artist-tag{display:block;margin-bottom:8px;color:#b3b3b3;font-size:9px;letter-spacing:.18em}
+.artist-card h2{margin:0;font-size:clamp(42px,5vw,72px);line-height:.9;letter-spacing:-.06em}
+.artist-arrow{position:absolute;right:22px;bottom:21px;z-index:2;font-size:26px;line-height:1;transition:transform .25s ease}
+.artist-card:hover img{transform:scale(1.045);filter:grayscale(1) contrast(1.2)}
+.artist-card:hover .artist-arrow{transform:translate(4px,-4px)}
+.lineup-footer{max-width:1150px;margin:70px auto 0;padding-top:18px;border-top:1px solid #292929;display:flex;justify-content:space-between;gap:20px;color:#666;font-size:9px;letter-spacing:.18em}
+.lineup-footer a{color:#aaa}
+@media(max-width:800px){.lineup-main{padding:110px 6vw 60px}.lineup-intro{margin-bottom:70px}.artist-grid{grid-template-columns:minmax(0,1fr)}.lineup-footer{font-size:8px}}

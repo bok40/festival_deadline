@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEADLINE FESTIVAL // LINEUP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="lineup.css">
+</head>
+<body class="lineup-page">
+  <div class="home-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="home.html" aria-label="DEADMARK">
+      <img src="img/deadmark-test.png" alt="DEADMARK">
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="home.html">HOME</a>
+      <a class="active" href="lineup.html">LINEUP</a>
+      <a href="home.html#faq">FAQ</a>
+      <a href="home.html#ingressos">INGRESSOS</a>
+    </nav>
+    <div class="header-code">SIGNAL_002</div>
+  </header>
+
+  <main class="lineup-main">
+    <section class="lineup-intro">
+      <p class="lineup-kicker">SIGNAL_002 // ARTIST FREQUENCIES</p>
+      <h1>CONHEÇA A<br><span>LINEUP.</span></h1>
+      <p class="lineup-lead">UM MORUMBIS CHEIO, UM PALCO SEM RESPIRO E NOMES QUE NÃO VIERAM PRA TOCAR BAIXO.</p>
+    </section>
+
+    <section class="artist-grid" aria-label="Artistas confirmados">
+      <a class="artist-card" href="artist-matue.html" aria-label="Ver página de Matuê">
+        <img src="https://www.eventworld.co/blob/images/pg/matue_309b0_1000.jpg" alt="Matuê">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">TRAP / SIGNAL_01</span>
+          <h2>MATUÊ</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+    </section>
+
+    <div class="lineup-footer">
+      <span>01 ARTIST // TEST SIGNAL</span>
+      <a href="home.html">← VOLTAR</a>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.addEventListener('click', () => link.classList.add('is-clicked'));
+    });
+  </script>
+</body>
+</html>

@@ -1,15 +1,13 @@
 const enterButton = document.getElementById("enterButton");
-const entranceScreen = document.getElementById("entranceScreen");
 const introVideo = document.getElementById("introVideo");
 const audio = document.getElementById("festivalAudio");
 
 let entered = false;
 
-async function enterFestival() {
+async function enterFestival(event) {
   if (entered) return;
   entered = true;
 
-  // O vídeo de entrada continua sendo visual; o clique libera o áudio real.
   try {
     audio.currentTime = 0;
     await audio.play();
@@ -19,16 +17,14 @@ async function enterFestival() {
 
   document.body.classList.add("is-entering");
 
+  // Depois da animação da pré-home, entra de fato na homepage.
   window.setTimeout(() => {
-    document.body.classList.add("is-entered");
-    // A homepage real será colocada aqui na próxima etapa.
+    window.location.assign(enterButton.href);
   }, 760);
 }
 
-// Qualquer clique na tela atravessa o DEADLINE.
-document.addEventListener("click", enterFestival, { once: true });
+if (enterButton) {
+  enterButton.addEventListener("click", enterFestival);
+}
 
-// Garante que o vídeo fique tocando enquanto a entrada estiver aberta.
-introVideo.play().catch(() => {
-  // Alguns navegadores podem exigir uma interação antes de reproduzir vídeo.
-});
+introVideo?.play().catch(() => {});

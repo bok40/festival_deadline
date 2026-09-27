@@ -22,7 +22,7 @@ body {
   background: var(--black);
   color: var(--white);
   font-family: "Space Grotesk", sans-serif;
-  cursor: crosshair;
+  cursor: url("img/deadline-cursor.png") 2 2, crosshair;
 }
 
 button {
@@ -106,8 +106,16 @@ button {
   font-size: clamp(0.88rem, 1.18vw, 1.1rem);
   font-style: italic;
   letter-spacing: 0.01em;
-  cursor: crosshair;
+  cursor: url("img/deadline-cursor.png") 2 2, crosshair;
+  text-decoration: none !important;
   margin-top: 20px;
+}
+
+.enter-cta:link,
+.enter-cta:visited,
+.enter-cta:hover,
+.enter-cta:active {
+  text-decoration: none !important;
 }
 
 .blood {
@@ -121,9 +129,6 @@ button {
   letter-spacing: 0.05em;
 }
 
-.site-placeholder {
-  display: none;
-}
 
 .grain,
 .scanline,
