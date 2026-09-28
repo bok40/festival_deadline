@@ -1,6 +1,0 @@
-DEADLINE AUDIO — v31
-
-Arquivo esperado: audio/deadline-beat.wav
-
-IMPORTANTE: a continuidade do beat entre paginas usa navegacao interna sem recarregar o documento (History API + fetch).
-Para testar essa continuidade, rode o projeto por um servidor local (ex.: Live Server) ou pelo Vercel/GitHub Pages. Abrir HTML diretamente via file:// pode bloquear fetch e cair para navegacao normal.

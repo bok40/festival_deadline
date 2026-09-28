@@ -1,7 +1,7 @@
 # DEADLINE FESTIVAL
 
-**Dupla:** NOME 1 e NOME 2
-**Site publicado:** COLE O LINK DA VERCEL AQUI
+**Dupla:** Nam Bok e Vinicius Puga
+**Site publicado:** festival-deadline.vercel.app
 
 ## Briefing
 
