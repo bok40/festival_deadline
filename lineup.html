@@ -6,55 +6,220 @@
   <title>DEADLINE FESTIVAL // LINEUP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio.css">
   <link rel="stylesheet" href="line-up/css/lineup.css">
 </head>
 <body class="lineup-page">
+  <div class="site-background" aria-hidden="true"></div>
   <div class="home-noise" aria-hidden="true"></div>
-
   <header class="site-header">
-    <a class="brand" href="home.html" aria-label="DEADMARK">
-      <img src="img/deadmark-test.png" alt="DEADMARK">
-    </a>
-    <nav class="main-nav" aria-label="Navegação principal">
-      <a href="home.html">HOME</a>
-      <a class="active" href="lineup.html">LINEUP</a>
-      <a href="faq/faq.html">FAQ</a>
-      <a href="ingressos/ingressos.html">INGRESSOS</a>
-    </nav>
+    <a class="brand" href="home.html" aria-label="DEADMARK"><img src="img/deadmark-test.png" alt="DEADMARK"></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="home.html">HOME</a><a class="active" href="lineup.html">LINEUP</a><a href="faq/faq.html">FAQ</a><a href="ingressos/ingressos.html">INGRESSOS</a><a href="informacoes/informacoes.html">INFO</a></nav>
     <div class="header-code">SIGNAL_002</div>
   </header>
-
   <main class="lineup-main">
     <section class="lineup-intro">
       <p class="lineup-kicker">SIGNAL_002 // ARTIST FREQUENCIES</p>
       <h1>CONHEÇA A<br><span>LINEUP.</span></h1>
-      <p class="lineup-lead">UM MORUMBIS CHEIO, UM PALCO SEM RESPIRO E NOMES QUE NÃO VIERAM PRA TOCAR BAIXO.</p>
+      <p class="lineup-lead">VINTE FREQUÊNCIAS. TRÊS DIAS. UM MORUMBIS CHEIO E ZERO VONTADE DE TOCAR BAIXO.</p>
     </section>
-
-    <section class="artist-grid" aria-label="Artistas confirmados">
-      <a class="artist-card" href="line-up/html/matue.html" aria-label="Ver página de Matuê">
-        <img src="https://www.eventworld.co/blob/images/pg/matue_309b0_1000.jpg" alt="Matuê">
+    <section class="artist-grid" id="horarios" aria-label="Artistas do DEADLINE">
+      <a class="artist-card" href="line-up/html/matue.html" aria-label="Ver página de MATUÊ">
+        <img src="img/artists/matue.jpg" alt="MATUÊ" onerror="this.src='img/artists/_placeholder.jpg';">
         <div class="artist-overlay"></div>
         <div class="artist-card-meta">
-          <span class="artist-tag">TRAP / SIGNAL_01</span>
+          <span class="artist-tag">TRAP / RAGE / SIGNAL_01</span><span class="artist-schedule">17 OCT // 18:30 // DEAD STAGE</span>
           <h2>MATUÊ</h2>
         </div>
         <span class="artist-arrow">↗</span>
       </a>
+      <a class="artist-card" href="line-up/html/brandao.html" aria-label="Ver página de BRANDÃO">
+        <img src="img/artists/brandao.jpg" alt="BRANDÃO" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">TRAP / RAGE / SIGNAL_02</span><span class="artist-schedule">17 OCT // 20:00 // DEAD STAGE</span>
+          <h2>BRANDÃO</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/leviano-dessiik.html" aria-label="Ver página de LEVIANO + DESSIIK">
+        <img src="img/artists/leviano-dessiik.jpg" alt="LEVIANO + DESSIIK" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">TRAP / RAGE / SIGNAL_03</span><span class="artist-schedule">17 OCT // 21:15 // DEAD STAGE</span>
+          <h2>LEVIANO + DESSIIK</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/phl-noturboy.html" aria-label="Ver página de PHL NOTURBOY">
+        <img src="img/artists/phl-noturboy.jpg" alt="PHL NOTURBOY" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">TRAP / RAGE / SIGNAL_04</span><span class="artist-schedule">17 OCT // 22:30 // DEAD STAGE</span>
+          <h2>PHL NOTURBOY</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/tchelo.html" aria-label="Ver página de TCHELO">
+        <img src="img/artists/tchelo.jpg" alt="TCHELO" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">TRAP / RAGE / SIGNAL_05</span><span class="artist-schedule">17 OCT // 23:45 // DEAD STAGE</span>
+          <h2>TCHELO</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/pedrin-js-da-torre-pavuna.html" aria-label="Ver página de PEDRIN &amp; JS DA TORRE + PAVUNA">
+        <img src="img/artists/pedrin-js-da-torre-pavuna.jpg" alt="PEDRIN &amp; JS DA TORRE + PAVUNA" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">TRAP / RAGE / SIGNAL_06</span><span class="artist-schedule">17 OCT // 01:00 // DEAD STAGE</span>
+          <h2>PEDRIN &amp; JS DA TORRE + PAVUNA</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/recayd.html" aria-label="Ver página de RECAYD">
+        <img src="img/artists/recayd.jpg" alt="RECAYD" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">TRAP / RAGE / SIGNAL_07</span><span class="artist-schedule">17 OCT // 02:15 // DEAD STAGE</span>
+          <h2>RECAYD</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/playboi-carti.html" aria-label="Ver página de PLAYBOI CARTI">
+        <img src="img/artists/playboi-carti.jpg" alt="PLAYBOI CARTI" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">RAGE / SIGNAL_08</span><span class="artist-schedule">18 OCT // 18:30 // DEAD STAGE</span>
+          <h2>PLAYBOI CARTI</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/travis-scott.html" aria-label="Ver página de TRAVIS SCOTT">
+        <img src="img/artists/travis-scott.jpg" alt="TRAVIS SCOTT" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">RAGE / TRAP / SIGNAL_09</span><span class="artist-schedule">18 OCT // 20:30 // DEAD STAGE</span>
+          <h2>TRAVIS SCOTT</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/xxxtentacion-experience.html" aria-label="Ver página de XXXTENTACION EXPERIENCE">
+        <img src="img/artists/xxxtentacion-experience.jpg" alt="XXXTENTACION EXPERIENCE" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">EXPERIENCE / TRIBUTE / SIGNAL_10</span><span class="artist-schedule">18 OCT // 22:30 // DEAD STAGE</span>
+          <h2>XXXTENTACION EXPERIENCE</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/trippie-redd.html" aria-label="Ver página de TRIPPIE REDD">
+        <img src="img/artists/trippie-redd.jpg" alt="TRIPPIE REDD" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">RAGE / TRAP / SIGNAL_11</span><span class="artist-schedule">18 OCT // 00:15 // DEAD STAGE</span>
+          <h2>TRIPPIE REDD</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/metallica.html" aria-label="Ver página de METALLICA">
+        <img src="img/artists/metallica.jpg" alt="METALLICA" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">METAL / SIGNAL_12</span><span class="artist-schedule">18 OCT // 01:30 // DEAD STAGE</span>
+          <h2>METALLICA</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/slipknot.html" aria-label="Ver página de SLIPKNOT">
+        <img src="img/artists/slipknot.jpg" alt="SLIPKNOT" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">METAL / SIGNAL_13</span><span class="artist-schedule">18 OCT // 03:00 // DEAD STAGE</span>
+          <h2>SLIPKNOT</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/megadeth.html" aria-label="Ver página de MEGADETH">
+        <img src="img/artists/megadeth.jpg" alt="MEGADETH" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">METAL / THRASH / SIGNAL_14</span><span class="artist-schedule">19 OCT // 17:30 // DEAD STAGE</span>
+          <h2>MEGADETH</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/korn.html" aria-label="Ver página de KORN">
+        <img src="img/artists/korn.jpg" alt="KORN" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">METAL / ALTERNATIVE / SIGNAL_15</span><span class="artist-schedule">19 OCT // 17:30 // DEAD STAGE</span>
+          <h2>KORN</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/avenged-sevenfold.html" aria-label="Ver página de AVENGED SEVENFOLD">
+        <img src="img/artists/avenged-sevenfold.jpg" alt="AVENGED SEVENFOLD" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">METAL / ROCK / SIGNAL_16</span><span class="artist-schedule">19 OCT // 19:00 // DEAD STAGE</span>
+          <h2>AVENGED SEVENFOLD</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/black-sabbath.html" aria-label="Ver página de BLACK SABBATH">
+        <img src="img/artists/black-sabbath.jpg" alt="BLACK SABBATH" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">EXPERIENCE / HEAVY / SIGNAL_17</span><span class="artist-schedule">19 OCT // 20:30 // DEAD STAGE</span>
+          <h2>BLACK SABBATH</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/charlie-brown-jr.html" aria-label="Ver página de CHARLIE BROWN JR.">
+        <img src="img/artists/charlie-brown-jr.jpg" alt="CHARLIE BROWN JR." onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">EXPERIENCE / ROCK / SIGNAL_18</span><span class="artist-schedule">19 OCT // 22:00 // DEAD STAGE</span>
+          <h2>CHARLIE BROWN JR.</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/raimundos.html" aria-label="Ver página de RAIMUNDOS">
+        <img src="img/artists/raimundos.jpg" alt="RAIMUNDOS" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">ROCK / PUNK / SIGNAL_19</span><span class="artist-schedule">19 OCT // 23:30 // DEAD STAGE</span>
+          <h2>RAIMUNDOS</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
+      <a class="artist-card" href="line-up/html/sepultura.html" aria-label="Ver página de SEPULTURA">
+        <img src="img/artists/sepultura.jpg" alt="SEPULTURA" onerror="this.src='img/artists/_placeholder.jpg';">
+        <div class="artist-overlay"></div>
+        <div class="artist-card-meta">
+          <span class="artist-tag">METAL / SIGNAL_20</span><span class="artist-schedule">19 OCT // 01:00 // DEAD STAGE</span>
+          <h2>SEPULTURA</h2>
+        </div>
+        <span class="artist-arrow">↗</span>
+      </a>
     </section>
-
-    <div class="lineup-footer">
-      <span>01 ARTIST // TEST SIGNAL</span>
-      <a href="home.html">← VOLTAR</a>
-    </div>
+    <div class="lineup-footer"><span>20 ARTISTS // DEADLINE FESTIVAL</span><a href="home.html">← VOLTAR</a></div>
   </main>
-
   <script>
     document.querySelectorAll('a[href]').forEach(link => {
       link.addEventListener('click', () => link.classList.add('is-clicked'));
     });
   </script>
+  <footer class="deadline-footer">
+    <div class="deadline-footer-copy"><strong class="deadline-footer-title">DEADLINE FESTIVAL</strong><span class="deadline-footer-meta">2026 // MORUMBIS // SÃO PAULO</span><span class="deadline-footer-meta">NAM BOK × VINICIUS PUGA</span></div>
+    <div class="deadline-footer-socials" aria-label="Redes sociais"><span class="deadline-social">IG</span><span class="deadline-social">FB</span><span class="deadline-social">SP</span></div>
+  </footer>
+
+  <script src="audio.js"></script>
 </body>
 </html>

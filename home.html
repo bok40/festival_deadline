@@ -6,8 +6,10 @@
   <title>DEADLINE FESTIVAL // HOME</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audio.css">
 </head>
 <body class="home-page">
   <!-- BACKGROUND SLOT: coloque sua imagem em img/site-background.jpg -->
@@ -19,19 +21,21 @@
       <img src="img/deadmark-test.png" alt="DEADMARK teste">
     </a>
 
-    <nav class="main-nav" aria-label="Navegação principal">
-      <a class="active" href="home.html">HOME</a>
-      <a href="lineup.html">LINEUP</a>
-      <a href="faq/faq.html">FAQ</a>
-      <a href="ingressos/ingressos.html">INGRESSOS</a>
-    </nav>
+    <nav class="main-nav" aria-label="Navegação principal"><a class="active" href="home.html">HOME</a><a href="lineup.html">LINEUP</a><a href="faq/faq.html">FAQ</a><a href="ingressos/ingressos.html">INGRESSOS</a><a href="informacoes/informacoes.html">INFO</a></nav>
 
     <div class="header-code">SIGNAL_001</div>
   </header>
 
   <main>
     <section class="home-hero" id="home">
-      <div class="hero-statue" aria-hidden="true"></div>
+      <div class="hero-photo-slot" aria-label="Área para foto do MorumBIS lotado">
+        <div class="hero-photo-frame">
+          <img src="img/morumbis-crowd.jpg" alt="MorumBIS lotado durante o DEADLINE" loading="eager" onerror="this.style.display='none';">
+          <div class="hero-photo-overlay"></div>
+          <div class="hero-photo-label">MORUMBIS // FULL CROWD_001</div>
+          <div class="hero-photo-placeholder">COLOQUE SUA FOTO AQUI<br><small>img/morumbis-crowd.jpg</small></div>
+        </div>
+      </div>
 
       <div class="hero-copy">
         <p class="eyebrow">MORUMBIS // SÃO PAULO // 17—19 OCT</p>
@@ -44,7 +48,7 @@
 
         <div class="hero-meta">
           <span>TRAP / RAGE / ROCK / METAL / ALT</span>
-          <span>SCROLL TO ROTATE_</span>
+          <span>FULL CROWD / LOW LIGHT_</span>
         </div>
       </div>
     </section>
@@ -54,22 +58,29 @@
         <p class="lineup-kicker">SIGNAL_002 // O RUÍDO COMEÇA AQUI</p>
         <h2>CONHEÇA A<br><span>LINEUP.</span></h2>
         <p class="lineup-description">OS NOMES QUE VÃO FAZER O MORUMBIS TREMER. TRAP, RAGE, ROCK, METAL E ALTERNATIVE — SEM PAUSA, SEM SAFE MODE. SÓ SOM ALTO ATÉ A LINHA AGUENTAR.</p>
-        <a class="lineup-cta" href="lineup.html">VER A LINEUP <span>↗</span></a>
+        <div class="lineup-actions">
+          <a class="lineup-cta" href="lineup.html">VER A LINEUP <span>↗</span></a>
+          <a class="lineup-cta lineup-cta-secondary" href="lineup.html#horarios">VER HORÁRIOS <span>↗</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="rules-section" id="regras">
+    <section class="rules-section" id="regras" data-statue-frames="141">
+      <div class="rules-statue" aria-label="Área reservada para os frames da estátua DEADLINE">
+        <div class="rules-statue-frame">
+          <div class="rules-statue-placeholder">
+            <span>STATUE_360</span>
+            <small>DROP FRAMES IN<br>IMG / STATUE-FRAMES</small>
+          </div>
+          <img id="deadline-statue-frame" src="img/statue-frames/frame_001.jpg" alt="Estátua do DEADLINE" loading="eager">
+          <div class="rules-statue-code">360° // FRAME 001</div>
+        </div>
+      </div>
       <div class="rules-intro">
         <p class="section-code">RULES_003 // THE DEADLINE CODE</p>
         <h2>THE DEADLINE<br><span>RULES.</span></h2>
-        <p>VOCÊ ATRAVESSOU A LINHA. AGORA SEGUE O CÓDIGO. RESPEITA O ESPAÇO, SEGUE A EQUIPE E NÃO FODE A EXPERIÊNCIA DE QUEM VEIO PELO MESMO RUÍDO.</p>
-      </div>
-      <div class="rules-list" aria-label="Regras do evento">
-        <div class="rule-item"><span>01</span><strong>RESPEITE O ESPAÇO.</strong></div>
-        <div class="rule-item"><span>02</span><strong>NÃO ATRAPALHE A EXPERIÊNCIA DOS OUTROS.</strong></div>
-        <div class="rule-item"><span>03</span><strong>SEM OBJETOS QUE COLOQUEM ALGUÉM EM RISCO.</strong></div>
-        <div class="rule-item"><span>04</span><strong>SIGA A EQUIPE E AS ORIENTAÇÕES DE SEGURANÇA.</strong></div>
-        <div class="rule-item"><span>05</span><strong>CURTA O SOM. NÃO ATRAPALHE O SOM.</strong></div>
+        <p>VOCÊ ATRAVESSOU A LINHA. AGORA SEGUE O CÓDIGO. RESPEITA O ESPAÇO, SEGUE A EQUIPE E NÃO F#@&amp; A EXPERIÊNCIA DE QUEM VEIO PELO MESMO RUÍDO.</p>
+        <a class="simple-link" href="informacoes/informacoes.html#regras">CONHEÇA AS REGRAS <span>↗</span></a>
       </div>
     </section>
 
@@ -83,6 +94,7 @@
           <strong>Praça Roberto Gomes Pedrosa, 1<br>Morumbi — São Paulo / SP</strong>
         </div>
         <a class="simple-link" href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Roberto+Gomes+Pedrosa%2C+1%2C+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener noreferrer">ABRIR NO MAPS ↗</a>
+        <a class="simple-link" href="informacoes/informacoes.html">VER INFORMAÇÕES <span>↗</span></a>
       </div>
       <div class="map-frame">
         <iframe
@@ -117,5 +129,12 @@
     </section>
   </main>
 
+  <footer class="deadline-footer">
+    <div class="deadline-footer-copy"><strong class="deadline-footer-title">DEADLINE FESTIVAL</strong><span class="deadline-footer-meta">2026 // MORUMBIS // SÃO PAULO</span><span class="deadline-footer-meta">NAM BOK × VINICIUS PUGA</span></div>
+    <div class="deadline-footer-socials" aria-label="Redes sociais"><span class="deadline-social">IG</span><span class="deadline-social">FB</span><span class="deadline-social">SP</span></div>
+  </footer>
+
+  <script src="audio.js"></script>
+<script src="home.js"></script>
 </body>
 </html>

@@ -6,20 +6,18 @@
   <title>DEADLINE FESTIVAL // FAQ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../home.css">
+<link rel="stylesheet" href="../audio.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="faq.css">
 </head>
 <body class="faq-page">
+  <div class="site-background" aria-hidden="true"></div>
   <div class="home-noise" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="../home.html" aria-label="DEADMARK"><img src="../img/deadmark-test.png" alt="DEADMARK"></a>
-    <nav class="main-nav" aria-label="Navegação principal">
-      <a href="../home.html">HOME</a>
-      <a href="../lineup.html">LINEUP</a>
-      <a class="active" href="faq.html">FAQ</a>
-      <a href="../ingressos/ingressos.html">INGRESSOS</a>
-    </nav>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="../home.html">HOME</a><a href="../lineup.html">LINEUP</a><a class="active" href="../faq/faq.html">FAQ</a><a href="../ingressos/ingressos.html">INGRESSOS</a><a href="../informacoes/informacoes.html">INFO</a></nav>
     <div class="header-code">SIGNAL_003</div>
   </header>
 
@@ -57,7 +55,27 @@
       </details>
     </section>
 
+    <section class="faq-contact">
+      <div>
+        <p class="kicker">SIGNAL_003.1 // CONTACT</p>
+        <h2>AINDA TEM<br><span>DÚVIDA?</span></h2>
+      </div>
+      <form class="deadline-form" action="#" onsubmit="return false;">
+        <label>NOME<input type="text" name="nome" placeholder="SEU NOME"></label>
+        <label>EMAIL<input type="email" name="email" placeholder="SEU@EMAIL.COM"></label>
+        <label>ASSUNTO<input type="text" name="assunto" placeholder="QUAL É A DÚVIDA?"></label>
+        <label>MENSAGEM<textarea name="mensagem" rows="4" placeholder="MANDA O SINAL."></textarea></label>
+        <button type="submit">ENVIAR SINAL ↗</button>
+      </form>
+    </section>
+
     <div class="page-footer-line"><span>QUESTIONS CLEARED_</span><a href="../ingressos/ingressos.html">← IR PARA INGRESSOS</a></div>
   </main>
+  <footer class="deadline-footer">
+    <div class="deadline-footer-copy"><strong class="deadline-footer-title">DEADLINE FESTIVAL</strong><span class="deadline-footer-meta">2026 // MORUMBIS // SÃO PAULO</span><span class="deadline-footer-meta">NAM BOK × VINICIUS PUGA</span></div>
+    <div class="deadline-footer-socials" aria-label="Redes sociais"><span class="deadline-social">IG</span><span class="deadline-social">FB</span><span class="deadline-social">SP</span></div>
+  </footer>
+
+  <script src="../audio.js"></script>
 </body>
 </html>
